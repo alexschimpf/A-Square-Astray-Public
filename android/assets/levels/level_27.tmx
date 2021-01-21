@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.4" orientation="orthogonal" renderorder="right-down" width="50" height="75" tilewidth="64" tileheight="64" infinite="0" nextlayerid="4" nextobjectid="254">
+ <properties>
+  <property name="gravity" value="0,-10"/>
+  <property name="time_limit_1" type="int" value="22"/>
+  <property name="time_limit_2" type="int" value="24"/>
+ </properties>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="12" name="player" type="player" x="1640" y="230" width="48" height="48"/>
+  <object id="80" name="finish_line" x="1488" y="3904" width="160">
+   <properties>
+    <property name="_ColorTween">colors: 1,0,0,1 1,1,0,1 0,1,0,1 0,0,1,1
+durations: 150,150,150,150</property>
+    <property name="_FinishLine" value="direction: 0,-1"/>
+    <property name="_PathMovement" value="path: 6,0,2500 -6,0,2500"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+    <property name="image" value="default"/>
+   </properties>
+  </object>
+  <object id="203" x="1536" y="128">
+   <polyline points="0,0 256,0"/>
+  </object>
+  <object id="205" x="1536" y="128">
+   <polyline points="0,0 0,192"/>
+  </object>
+  <object id="206" x="1792" y="128">
+   <polyline points="0,0 0,192"/>
+  </object>
+  <object id="208" x="1536" y="320">
+   <polyline points="0,0 -192,0"/>
+  </object>
+  <object id="209" x="1792" y="320">
+   <polyline points="0,0 192,0"/>
+  </object>
+  <object id="210" x="1344" y="320">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="211" x="1984" y="320">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="212" x="1984" y="640">
+   <polyline points="0,0 -448,0"/>
+  </object>
+  <object id="213" x="1344" y="896">
+   <polyline points="0,0 192,0"/>
+  </object>
+  <object id="214" x="1536" y="896">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="215" x="1984" y="896">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="216" x="1312" y="1024" width="224" height="128">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="217" x="1984" y="1024" width="224" height="128">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="219" x="1312" y="1024" width="224" height="128">
+   <properties>
+    <property name="_PathMovement" value="path: 1,0,300 1,0,200 1.5,0,100 -3.5,0,600 0,0,900"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="220" x="1984" y="1024" width="224" height="128">
+   <properties>
+    <property name="_PathMovement" value="path: -1,0,300 -1,0,200 -1.5,0,100 3.5,0,600 0,0,900"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="221" x="1312" y="1280" width="224" height="128">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="222" x="1312" y="1280" width="224" height="128">
+   <properties>
+    <property name="_PathMovement" value="path: 1,0,300 1,0,200 1.5,0,100 -3.5,0,600 0,0,900"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="223" x="1984" y="1280" width="224" height="128">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="224" x="1984" y="1280" width="224" height="128">
+   <properties>
+    <property name="_PathMovement" value="path: -1,0,300 -1,0,200 -1.5,0,100 3.5,0,600 0,0,900"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="225" x="1536" y="896">
+   <polyline points="0,0 0,-64"/>
+  </object>
+  <object id="226" x="1536" y="1472">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="227" x="1984" y="1472">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="229" x="1536" y="1664">
+   <polyline points="0,0 160,0 160,-64"/>
+  </object>
+  <object id="230" x="1824" y="1600">
+   <polyline points="0,0 0,64 160,64"/>
+  </object>
+  <object id="231" x="1536" y="1920">
+   <polyline points="0,0 64,0 64,64"/>
+  </object>
+  <object id="232" x="1728" y="1984">
+   <polyline points="0,0 0,-64 256,-64"/>
+  </object>
+  <object id="233" x="1536" y="2048">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="234" x="1984" y="2048">
+   <polyline points="0,0 0,576"/>
+  </object>
+  <object id="235" x="1536" y="2240">
+   <polyline points="0,0 320,0 320,-64"/>
+  </object>
+  <object id="236" x="1536" y="2560">
+   <polyline points="0,0 160,0 160,-64"/>
+  </object>
+  <object id="237" x="1824" y="2496">
+   <polyline points="0,0 0,64 160,64"/>
+  </object>
+  <object id="239" x="1536" y="2624">
+   <polyline points="0,0 0,704"/>
+  </object>
+  <object id="240" x="1984" y="2624">
+   <polyline points="0,0 0,704"/>
+  </object>
+  <object id="241" x="1536" y="3328" width="224" height="128">
+   <properties>
+    <property name="_PathMovement" value="path: 0,8,2500 0,-8,2500"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="242" x="1760" y="2816" width="224" height="128">
+   <properties>
+    <property name="_PathMovement" value="path: 0,-8,2500 0,8,2500"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="243" x="1536" y="3328">
+   <polyline points="0,0 0,320"/>
+  </object>
+  <object id="244" x="1984" y="3328">
+   <polyline points="0,0 0,320"/>
+  </object>
+  <object id="246" x="1536" y="3648">
+   <polyline points="0,0 -128,0"/>
+  </object>
+  <object id="247" x="1984" y="3648">
+   <polyline points="0,0 128,0"/>
+  </object>
+  <object id="248" x="1408" y="3648">
+   <polyline points="0,0 0,448"/>
+  </object>
+  <object id="249" x="2112" y="3648">
+   <polyline points="0,0 0,448"/>
+  </object>
+  <object id="251" x="1408" y="4096">
+   <polyline points="0,0 704,0"/>
+  </object>
+  <object id="252" x="1472" y="3840">
+   <properties>
+    <property name="_PathMovement" value="path: 6,0,2500 -6,0,2500"/>
+   </properties>
+   <polyline points="0,0 0,128"/>
+  </object>
+  <object id="253" x="1664" y="3840">
+   <properties>
+    <property name="_PathMovement" value="path: 6,0,2500 -6,0,2500"/>
+   </properties>
+   <polyline points="0,0 0,128"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Object Layer 2" visible="0"/>
+</map>

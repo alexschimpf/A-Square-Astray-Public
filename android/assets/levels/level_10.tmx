@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.4" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="64" tileheight="64" infinite="0" nextlayerid="4" nextobjectid="66">
+ <properties>
+  <property name="time_limit_1" type="int" value="14"/>
+  <property name="time_limit_2" type="int" value="16"/>
+ </properties>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" name="player" type="player" x="162" y="1352" width="48" height="48"/>
+  <object id="2" name="finish_line" x="1216" y="448" width="256" height="5">
+   <properties>
+    <property name="_ColorTween">colors: 1,0,0,1 1,1,0,1 0,1,0,1 0,0,1,1
+durations: 150,150,150,150</property>
+    <property name="_FinishLine" value="direction: 0,1"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+    <property name="image" value="default"/>
+   </properties>
+  </object>
+  <object id="3" x="128" y="1344">
+   <polyline points="384,128 0,128 0,-64 640,-64"/>
+  </object>
+  <object id="4" x="512" y="1344">
+   <polyline points="192,-512 704,-512"/>
+  </object>
+  <object id="5" x="704" y="832" width="320" height="192">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: 10,0"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="11" x="1344" y="1280" width="192" height="192">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: -10,0"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="12" x="768" y="1472">
+   <polyline points="256,0 0,0 0,-192"/>
+  </object>
+  <object id="17" x="1024" y="1024" width="512" height="256">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="19" x="1216" y="832">
+   <polyline points="0,0 0,-384"/>
+  </object>
+  <object id="21" x="1216" y="816">
+   <polyline points="256,-368 256,208"/>
+  </object>
+  <object id="20" x="1216" y="960" width="256" height="64">
+   <properties>
+    <property name="_PathMovement" value="path: 0,0,1000 0,8,1500 0,-8,1500"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="48" x="1344" y="1024">
+   <properties>
+    <property name="_PathMovement" value="path: -5,0,2000 5,0,2000 0,0,200"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+   <polygon points="0,0 -320,0 -320,256 0,256"/>
+  </object>
+  <object id="51" x="1216" y="832" width="256" height="192">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: 0,10"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="52" x="1280" y="1472" width="256" height="192">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="53" x="1536" y="1472">
+   <properties>
+    <property name="_PathMovement" value="path: -4,0,1200 4,0,1200"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+   <polygon points="0,0 -256,0 -256,192 0,192"/>
+  </object>
+  <object id="57" x="512" y="1472">
+   <polyline points="0,0 0,192"/>
+  </object>
+  <object id="58" x="512" y="1664">
+   <polyline points="0,0 768,0"/>
+  </object>
+  <object id="60" x="1280" y="1664">
+   <polyline points="0,0 0,-192"/>
+  </object>
+  <object id="61" x="1280" y="1472">
+   <polyline points="0,0 256,0"/>
+  </object>
+  <object id="62" x="1536" y="1472">
+   <polyline points="0,0 0,-192"/>
+  </object>
+  <object id="63" x="704" y="832">
+   <polyline points="0,0 0,448"/>
+  </object>
+  <object id="64" x="768" y="1280" width="256" height="192">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: 0,10"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="65" x="1024" y="1472">
+   <polyline points="0,0 0,-64"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Object Layer 2" visible="0"/>
+</map>

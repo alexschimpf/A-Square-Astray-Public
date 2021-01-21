@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.4" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="64" tileheight="64" infinite="0" nextlayerid="3" nextobjectid="82">
+ <properties>
+  <property name="gravity" value="0,10"/>
+  <property name="time_limit_1" type="int" value="11"/>
+  <property name="time_limit_2" type="int" value="13"/>
+ </properties>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" name="player" type="player" x="1095" y="1960" width="48" height="48"/>
+  <object id="2" name="finish_line" x="2720" y="1152" width="5" height="320">
+   <properties>
+    <property name="_ColorTween">colors: 1,0,0,1 1,1,0,1 0,1,0,1 0,0,1,1
+durations: 150,150,150,150</property>
+    <property name="_FinishLine" value="direction: 1,0"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+    <property name="image" value="default"/>
+   </properties>
+  </object>
+  <object id="25" x="1072" y="1648" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value="exit_portal_name: exit1"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="28" name="exit1" x="1072" y="1456" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value=""/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="40" x="768" y="704">
+   <polyline points="0,0 0,1344"/>
+  </object>
+  <object id="41" x="768" y="2048">
+   <polyline points="0,0 704,0"/>
+  </object>
+  <object id="42" x="1472" y="2048">
+   <polyline points="0,0 0,-1344"/>
+  </object>
+  <object id="43" x="768" y="704">
+   <polyline points="0,0 704,0"/>
+  </object>
+  <object id="45" x="1472" y="1024">
+   <polyline points="0,0 832,0"/>
+  </object>
+  <object id="46" x="1664" y="1600">
+   <polyline points="0,0 640,0"/>
+  </object>
+  <object id="53" x="1472" y="1600">
+   <polyline points="0,0 -704,0"/>
+  </object>
+  <object id="55" x="1328" y="1056" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value="exit_portal_name: exit2"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="56" name="exit2" x="816" y="1456" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value=""/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="59" x="848" y="1360" width="32" height="32">
+   <properties>
+    <property name="_DoorUnlock" value="door_name: door"/>
+    <property name="angular_velocity" type="int" value="4"/>
+    <property name="body_type" value="kinematic"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+    <property name="image" value="default"/>
+   </properties>
+  </object>
+  <object id="60" x="1456" y="1024">
+   <properties>
+    <property name="_Fatal" value=""/>
+   </properties>
+   <polyline points="0,0 -176,0"/>
+  </object>
+  <object id="62" x="1360" y="1360" width="32" height="32">
+   <properties>
+    <property name="_DoorUnlock" value="door_name: door"/>
+    <property name="angular_velocity" type="int" value="4"/>
+    <property name="body_type" value="kinematic"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+    <property name="image" value="default"/>
+   </properties>
+  </object>
+  <object id="63" x="816" y="1056" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value="exit_portal_name: exit3"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="64" x="960" y="1024">
+   <properties>
+    <property name="_Fatal" value=""/>
+   </properties>
+   <polyline points="0,0 -176,0"/>
+  </object>
+  <object id="65" name="exit3" x="1328" y="1456" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value=""/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="66" name="door" x="992" y="992" width="256" height="64">
+   <properties>
+    <property name="_Animation">name: door4_horizontal
+duration: 500
+state: stopped
+num_loops: 1</property>
+    <property name="_Door" value="num_unlocks_required: 2"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="67" x="1072" y="1200" width="96" height="96">
+   <properties>
+    <property name="_AngularVelocity" value="angular_velocity: 4"/>
+    <property name="_Fatal" value=""/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="68" x="1072" y="736" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value="exit_portal_name: exit4"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="69" name="exit4" x="1520" y="1680" width="96" height="96">
+   <properties>
+    <property name="_Teleport" value=""/>
+    <property name="disable_outlines" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="70" x="1472" y="1024" width="192" height="576">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: 10,0"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="71" x="1472" y="1856">
+   <polyline points="0,0 192,0 192,-256"/>
+  </object>
+  <object id="74" x="1664" y="1024" width="96" height="320">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="75" x="1680" y="1024" width="64" height="304">
+   <properties>
+    <property name="_Fatal" value=""/>
+    <property name="_PathMovement" value="path: 0,-4,2000 0,4,2000 0,0,500"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="76" x="2176" y="1280" width="96" height="320">
+   <properties>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="77" x="2192" y="1296" width="64" height="304">
+   <properties>
+    <property name="_Fatal" value=""/>
+    <property name="_PathMovement" value="path: 0,4,2000 0,-4,2000 0,0,500"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="78" x="2304" y="1024">
+   <polyline points="0,0 416,0"/>
+  </object>
+  <object id="79" x="2304" y="1600">
+   <polyline points="0,0 416,0"/>
+  </object>
+  <object id="80" x="2720" y="1600">
+   <polyline points="0,0 0,-128"/>
+  </object>
+  <object id="81" x="2720" y="1152">
+   <polyline points="0,0 0,-128"/>
+  </object>
+ </objectgroup>
+</map>

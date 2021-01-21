@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.4" orientation="orthogonal" renderorder="right-down" width="70" height="25" tilewidth="64" tileheight="64" infinite="0" nextlayerid="4" nextobjectid="32">
+ <properties>
+  <property name="time_limit_1" type="int" value="9"/>
+  <property name="time_limit_2" type="int" value="11"/>
+ </properties>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" name="player" type="player" x="240" y="1456" width="48" height="48"/>
+  <object id="3" name="finish_line" x="1344" y="1536" width="256" height="5">
+   <properties>
+    <property name="_ColorTween">colors: 1,0,0,1 1,1,0,1 0,1,0,1 0,0,1,1
+durations: 150,150,150,150</property>
+    <property name="_FinishLine" value="direction: 0,-1"/>
+    <property name="disable_outlines" type="bool" value="true"/>
+    <property name="image" value="default"/>
+   </properties>
+  </object>
+  <object id="6" x="12" y="1408">
+   <polyline points="628,-896 628,0"/>
+  </object>
+  <object id="5" x="624" y="1408">
+   <polyline points="16,0 -432,0"/>
+  </object>
+  <object id="7" x="1344" y="512" width="256" height="256">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: 0,-10"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="8" x="832" y="768">
+   <polyline points="512,0.0512 64.0003,0"/>
+  </object>
+  <object id="9" x="1360" y="256">
+   <polyline points="-16,512 -16,1280"/>
+  </object>
+  <object id="10" x="1600" y="34.1333">
+   <polyline points="0,477.867 0,1501.87"/>
+  </object>
+  <object id="11" x="640" y="1408" width="256" height="128">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: 0,10"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="12" x="640" y="512" width="256" height="256">
+   <properties>
+    <property name="_GravitySwitch" value="gravity: 10,0"/>
+    <property name="fill" type="bool" value="true"/>
+    <property name="invisible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="24" x="192" y="1408">
+   <polyline points="0,0 0,128"/>
+  </object>
+  <object id="25" x="192" y="1536">
+   <polyline points="0,0 704,0"/>
+  </object>
+  <object id="26" x="896" y="1536">
+   <polyline points="0,0 0,-768"/>
+  </object>
+  <object id="27" x="640" y="512">
+   <polyline points="0,0 960,0"/>
+  </object>
+  <object id="28" x="768" y="1280" width="128" height="128">
+   <properties>
+    <property name="_Fatal" value=""/>
+    <property name="_PathMovement" value="path: 0,8,1400 0,0,50 0,-8,1400 0,0,50"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="30" x="1216" y="512" width="128" height="128">
+   <properties>
+    <property name="_Fatal" value=""/>
+    <property name="_PathMovement" value="path: -5,0,1200 0,0,50 5,0,1200 0,0,50"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="31" x="1472" y="768" width="128" height="128">
+   <properties>
+    <property name="_Fatal" value=""/>
+    <property name="_PathMovement" value="path: 0,-8,1400 0,0,50 0,8,1400 0,0,50"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Object Layer 2" visible="0"/>
+</map>
